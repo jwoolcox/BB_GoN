@@ -1,2 +1,2 @@
-GoN
-===
+Game of Neighbours
+==================
