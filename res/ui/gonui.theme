@@ -1,0 +1,262 @@
+theme particleEditor
+{
+    texture = res/ui/gonui.png
+
+    imageList normalImages
+    {
+        color = #cdcdcdff
+
+        image unchecked
+        {
+            region = 99, 31, 33, 35
+        }
+
+        image checked
+        {
+            region = 82, 84, 33, 35
+        }
+
+        image unselected
+        {
+            region = 127, 1, 46, 46
+        }
+
+        image selected
+        {
+            region = 127, 46, 46, 46
+        }
+
+        image minCap
+        {
+            region = 0, 0, 2, 2
+        }
+
+        image maxCap
+        {
+            region = 0, 0, 2, 2
+        }
+
+        image marker
+        {
+            region = 164, 3, 40, 40
+        }
+
+        image track
+        {
+            region = 3, 166, 71, 7
+        }
+
+        image scrollBarTopCap
+        {
+            region = 0, 99, 19, 5
+        }
+
+        image verticalScrollBar
+        {
+            region = 0, 104, 19, 19
+        }
+
+        image scrollBarBottomCap
+        {
+            region = 0, 138, 19, 5
+        }
+    }
+
+    imageList activeImages : normalImages
+    {
+        color = #ddddddff
+
+		image marker
+        {
+            region = 164, 84, 40, 40
+        }
+
+        image unchecked
+        {
+            region = 78, 91, 46, 46
+        }
+
+        image checked
+        {
+            region = 78, 91, 46, 46
+        }
+
+        image unselected
+        {
+            region = 127, 91, 46, 46
+        }
+
+        image selected
+        {
+            region = 127, 91, 46, 46
+        }
+    }
+
+    skin mainNormal
+    {
+        region = 0, 0, 77, 77
+        color = #ffffffff
+    }
+
+	skin btnStartSkin
+	{
+		region = 238, 81, 73, 73
+	}
+
+	skin btnStopSkin
+	{
+		region = 238, 2, 73, 73
+	}
+
+	skin btnResetSkin
+	{
+		region = 319, 2, 73, 73
+	}
+
+	skin btnAudioSkin
+	{
+		region = 91, 81, 51, 51
+	}
+
+    skin mainActive : mainNormal
+    {
+        color = #9a9a9aff
+    }
+
+	style btnStart
+	{
+		stateNormal
+		{
+			skin = btnStartSkin
+		}
+	}
+
+	style btnStop
+	{
+		stateNormal
+		{
+			skin = btnStopSkin
+		}
+	}
+
+	style btnReset
+	{
+		stateNormal
+		{
+			skin = btnResetSkin
+		}
+	}
+
+	style btnAudio
+	{
+		stateNormal
+		{
+			skin = btnAudioSkin
+		}
+	}
+
+    style basic
+    {
+        stateNormal
+        {
+            skin = mainNormal
+            imageList = normalImages
+
+            font = res/gpb/MonospaceTypewriter.gpb
+            textColor = #ffffffff
+            fontSize = 24
+            textAlignment = ALIGN_VCENTER_HCENTER
+        }
+
+        stateActive
+        {
+			skin = mainActive
+            imageList = activeImages
+        }
+    }
+
+    style buttonStyle : basic
+    {
+        stateNormal
+        {
+            font = res/gpb/MonospaceTypewriter.gpb
+            fontSize = 24
+        }
+    }
+
+	style labelStyle
+	{
+		stateNormal
+		{
+            imageList = normalImages
+			color = #ddddddff
+            textColor = #ffffffff
+            font = res/gpb/MonospaceTypewriter.gpb
+			fontSize = 38
+            textAlignment = ALIGN_VCENTER_HCENTER
+        }
+
+        stateActive
+        {
+            imageList = activeImages
+            textAlignment = ALIGN_VCENTER_HCENTER
+        }
+	}
+
+    style noBorder
+    {
+        stateNormal
+        {
+            imageList = normalImages
+            font = res/gpb/MonospaceTypewriter.gpb
+            textColor = #ffffffff
+            fontSize = 28
+            textAlignment = ALIGN_VCENTER_HCENTER
+        }
+
+        stateActive
+        {
+            imageList = activeImages
+            textAlignment = ALIGN_VCENTER_HCENTER
+        }
+    }
+
+    style iconNoBorder : noBorder
+    {
+        stateNormal
+        {
+            font = res/gpb/MonospaceTypewriter.gpb
+            fontSize = 20
+            textAlignment = ALIGN_VCENTER_LEFT
+        }
+
+        stateActive
+        {
+            font = res/gpb/MonospaceTypewriter.gpb
+            fontSize = 20
+            textAlignment = ALIGN_VCENTER_LEFT
+        }
+    }
+
+    style title
+    {
+        padding
+        {
+            left = -5
+            right = -5
+        }
+
+        stateNormal
+        {
+            textColor = #ffffffff
+            font = res/gpb/MonospaceTypewriter.gpb
+            fontSize = 26
+            textAlignment = ALIGN_TOP_HCENTER
+        }
+
+        stateActive
+        {
+            textColor = #C3D9BFff
+        }
+    }
+}

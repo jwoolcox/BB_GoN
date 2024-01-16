@@ -1,0 +1,33 @@
+material lifetile
+{
+    technique
+    {
+        pass
+        {
+        	// shaders
+            vertexShader = res/shaders/textured.vert
+            fragmentShader = res/shaders/textured.frag
+
+            // uniforms
+            u_worldViewProjectionMatrix = WORLD_VIEW_PROJECTION_MATRIX
+            u_inverseTransposeWorldViewMatrix = INVERSE_TRANSPOSE_WORLD_VIEW_MATRIX
+
+			sampler u_diffuseTexture
+			{
+				path = res/textures/tile.png
+				mipmap = true
+				wrapS = CLAMP
+				wrapT = CLAMP
+				minFilter = NEAREST_MIPMAP_LINEAR
+				magFilter = LINEAR
+			}
+
+            // render state
+            renderState
+            {
+                cullFace = true
+                depthTest = true
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="res">
+    </Filter>
+    <Filter Include="src">
+    </Filter>
+    <Filter Include="res\shaders">
+      <UniqueIdentifier>{a2d28517-ff9c-494a-a9f4-ca90a646aed6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="res\mtl">
+      <UniqueIdentifier>{e9569f3e-4cf2-49a6-94ed-7cc95aaa9dfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="res\gpb">
+      <UniqueIdentifier>{5746112e-8a02-4ff5-957a-a090ba285dc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="res\textures">
+      <UniqueIdentifier>{cd1a8204-9b55-4f85-8d24-64a79d4ccba7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="res\ui">
+      <UniqueIdentifier>{389a9fba-be85-4d37-82bf-3d186ef38057}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="game.config" />
+    <None Include="icon.png" />
+    <None Include="bar-descriptor.xml" />
+    <None Include="mdl-src\encode.bat" />
+    <None Include="res\gpb\insolent.gpb">
+      <Filter>res\gpb</Filter>
+    </None>
+    <None Include="res\gpb\lifetile.gpb">
+      <Filter>res\gpb</Filter>
+    </None>
+    <None Include="res\mtl\lifetile.material">
+      <Filter>res\mtl</Filter>
+    </None>
+    <None Include="res\shaders\textured.vert">
+      <Filter>res\shaders</Filter>
+    </None>
+    <None Include="res\shaders\textured.frag">
+      <Filter>res\shaders</Filter>
+    </None>
+    <None Include="res\textures\logo_powered_white.png">
+      <Filter>res\textures</Filter>
+    </None>
+    <None Include="res\ui\gonui.form">
+      <Filter>res\ui</Filter>
+    </None>
+    <None Include="res\ui\gonui.png">
+      <Filter>res\ui</Filter>
+    </None>
+    <None Include="res\gpb\MonospaceTypewriter.gpb">
+      <Filter>res\gpb</Filter>
+    </None>
+    <None Include="res\ui\gonui.theme">
+      <Filter>res\ui</Filter>
+    </None>
+    <None Include="res\textures\tile.png">
+      <Filter>res\textures</Filter>
+    </None>
+    <None Include="res\textures\black.png">
+      <Filter>res\textures</Filter>
+    </None>
+    <None Include="res\textures\white.png">
+      <Filter>res\textures</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\gonAppMain.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CStateManager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\gonAppMain.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CStateManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
